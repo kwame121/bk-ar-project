@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
-}
+body,html
+{
+    font-family: 'Open Sans', sans-serif!important;
+    overflow-y:hidden!important;
+    height:100%;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
   }
+
+.info-card .bottom 
+{
+    padding:0.5rem;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.info-card .top 
+{
+    padding:0.5rem;
+    font-size: 2.5rem;
+    font-weight: 300;
 }
 
-.App-link {
-  color: #61dafb;
+.flex 
+{
+    display:flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-c
+{
+    flex-direction: column;
 }
+
+.flex-r
+{
+    flex-direction:row;
+}
+
+.w-100 
+{
+    width:100%;
+}
+
+#zapparCanvas 
+{
+    overflow-y:hidden;
+    
+}
+
+.info-modal .ant-modal-content
+{
+    position: relative;
+    background-color: black!important;
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%), 0 9px 28px 8px rgb(0 0 0 / 5%);
+    pointer-events: auto;
+    border: 1px solid white;
+}
+
+.info-modal .ant-modal-close 
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    padding: 0;
+    color: rgb(255 255 255)!important;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.info-modal .ant-modal .header 
+{
+    padding: 16px 24px;
+    color: rgb(255 255 255 / 85%)!important;
+    background: black!important;
+    border-bottom: 1px solid #f0f0f0;
+    border-radius: 2px 2px 0 0;
+}
+
+.info-modal .ant-modal-body 
+{
+    /* padding: 24px; */
+    font-size: 14px;
+    line-height: 1.5715;
+    word-wrap: break-word;
+}
+
+.start-main 
+{
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.main-area .top 
+{
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.main-area .bottom 
+{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.get-started-btn
+{
+    margin-top: 1rem;
+    padding: 0.8rem;
+    width: 100%;
+    background: #1d1d1d;
+    color: white;
+    border: 1px solid white;
+
+}
+
+.right 
+{
+    margin-left:auto;
+    order:1;
+}
+
+
+
+
+
+
+
